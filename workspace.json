@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "basic": "examples/basic",
+    "foolib": "packages/foolib"
+  }
+}

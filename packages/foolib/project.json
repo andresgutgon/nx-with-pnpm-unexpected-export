@@ -1,0 +1,32 @@
+{
+  "root": "packages/foolib",
+  "sourceRoot": "packages/foolib/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/foolib",
+        "main": "packages/foolib/src/index.ts",
+        "tsConfig": "packages/foolib/tsconfig.lib.json",
+        "assets": ["packages/foolib/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/foolib/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/foolib"],
+      "options": {
+        "jestConfig": "packages/foolib/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

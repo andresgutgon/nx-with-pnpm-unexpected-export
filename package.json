@@ -1,0 +1,48 @@
+{
+  "name": "remix-storage",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "remix setup node"
+  },
+  "private": true,
+  "dependencies": {
+    "@remix-run/react": "^1.0.6",
+    "@remix-run/serve": "^1.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "^1.0.6",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@nrwl/cli": "13.8.4",
+    "@nrwl/eslint-plugin-nx": "13.8.4",
+    "@nrwl/jest": "13.8.4",
+    "@nrwl/js": "13.8.4",
+    "@nrwl/linter": "13.8.4",
+    "@nrwl/remix": "^13.7.1",
+    "@nrwl/tao": "13.8.4",
+    "@nrwl/workspace": "13.8.4",
+    "@remix-run/dev": "^1.0.6",
+    "@swc/cli": "~0.1.55",
+    "@swc/core": "~1.2.143",
+    "@swc/helpers": "~0.3.3",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "~5.10.0",
+    "@typescript-eslint/parser": "~5.10.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "~8.7.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "27.2.3",
+    "prettier": "^2.5.1",
+    "ts-jest": "27.0.5",
+    "typescript": "~4.5.2",
+    "webpack": "^5.70.0"
+  }
+}
